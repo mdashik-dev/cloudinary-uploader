@@ -1,6 +1,6 @@
 {
     "name": "cloudinary-uploader",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "A feature-rich Cloudinary uploader with validation, transforms, bulk ops, and more",
     "main": "dist/index.js",
     "module": "dist/index.mjs",
@@ -29,7 +29,7 @@
         "file",
         "uploader"
     ],
-    "author": "",
+    "author": "Md Ashik",
     "license": "MIT",
     "dependencies": {
         "cloudinary": "^2.0.0"
@@ -37,6 +37,7 @@
     "devDependencies": {
         "@types/node": "^20.0.0",
         "tsup": "^8.0.0",
+        "tsx": "^4.21.0",
         "typescript": "^5.0.0"
     },
     "engines": {
