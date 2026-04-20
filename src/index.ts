@@ -1,7 +1,7 @@
 import { initCloudinary } from './utils/cloudinary.js'
 import { runUpload } from './actions/upload.js'
 import { runReplace } from './actions/replace.js'
-// import { runDelete } from './actions/delete.js'
+import { runDelete } from './actions/delete.js'
 import { runRename, runGetInfo, runAddTag, runRemoveTag, runGenerateUrl } from './actions/others.js'
 import { CloudinaryUploaderError } from './types/index.js'
 import type { Action, ActionFilesMap, ActionResultMap, UploaderInput } from './types/index.js'
@@ -53,13 +53,13 @@ export async function cloudinaryUploader<A extends Action>(
                     parallel,
                 ) as Promise<ActionResultMap[A]>
 
-            // case 'delete':
-            //     return runDelete(
-            //         cloudinary,
-            //         files as ActionFilesMap['delete'],
-            //         retry,
-            //         parallel,
-            //     ) as Promise<ActionResultMap[A]>
+            case 'delete':
+                return runDelete(
+                    cloudinary,
+                    files as ActionFilesMap['delete'],
+                    retry,
+                    parallel,
+                ) as Promise<ActionResultMap[A]>
 
             case 'rename':
                 return runRename(
