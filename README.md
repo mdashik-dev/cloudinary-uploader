@@ -1,17 +1,17 @@
-# cloudinary-uploader
+# cloudinary-uploader-pro
 
 A fully-typed TypeScript npm package for Cloudinary — one function, all operations.
 
 ## Installation
 
 ```bash
-npm install cloudinary-uploader
+npm install cloudinary-uploader-pro
 ```
 
 ## Quick start
 
 ```ts
-import { cloudinaryUploader } from "cloudinary-uploader";
+import { cloudinaryUploader } from "cloudinary-uploader-pro";
 
 const config = {
   cloud_name: "your_cloud",
@@ -204,7 +204,7 @@ const results = await cloudinaryUploader({
 ## Error handling
 
 ```ts
-import { cloudinaryUploader, CloudinaryUploaderError } from 'cloudinary-uploader'
+import { cloudinaryUploader, CloudinaryUploaderError } from 'cloudinary-uploader-pro'
 
 try {
   const results = await cloudinaryUploader({ ... })

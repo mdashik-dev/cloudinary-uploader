@@ -1,6 +1,6 @@
 {
-    "name": "cloudinary-uploader",
-    "version": "1.0.1",
+    "name": "cloudinary-uploader-pro",
+    "version": "1.0.4",
     "description": "A feature-rich Cloudinary uploader with validation, transforms, bulk ops, and more",
     "main": "dist/index.js",
     "module": "dist/index.mjs",
